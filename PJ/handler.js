@@ -33,10 +33,8 @@ exports.handler = function (event, context, callback) {
 		}, function (err, data) {
 			if (err) {
 				callback(err, null);
-				console.log("Error:",err);
 			} else {
 				callback(null, "Successfully Saved Entry!");
-				console.log("Success");
 			}
 		});
 	} else {
