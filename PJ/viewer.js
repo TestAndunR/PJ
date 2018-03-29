@@ -5,7 +5,7 @@ exports.handler = function (event, context, callback) {
 	let response = {
 		body: "",
 		statusCode: 200,
-		isBase64Encoded: false
+		isBase64Encoded: flse
 	}
 	ddb.scan({
 		TableName: 'contact_us',
